@@ -1,0 +1,12 @@
+# deliberately weak sample
+Port 22
+PermitRootLogin yes
+PasswordAuthentication yes
+PermitEmptyPasswords yes
+X11Forwarding yes
+MaxAuthTries 10
+Ciphers aes128-cbc,aes256-gcm@openssh.com,3des-cbc
+MACs hmac-sha2-256-etm@openssh.com,hmac-md5
+LogLevel QUIET
+Match User backup
+    PasswordAuthentication no
